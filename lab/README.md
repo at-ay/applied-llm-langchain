@@ -1,6 +1,6 @@
 # LangChain lab sheet
 
-Write each answer as a separate file in this `lab/` folder and run it from the
+Write each answer in this `lab/` folder (some questions give you a starter file) and run it from the
 `applied-llm-langchain` folder, as with the examples:
 
 ```bash
@@ -13,8 +13,8 @@ Use `"ollama:llama3.2:1b"` as the model unless a question says otherwise.
 
 ## Q1 · A chatbot that counts its tokens
 
-Write `lab/q1_token_chatbot.py`: a chatbot that runs in an infinite loop and, after every
-assistant reply, shows how many tokens the conversation has used so far.
+Open `lab/q1_token_chatbot.py` and fill in the `YOUR TURN` part: a chatbot that runs in an
+infinite loop and, after every assistant reply, shows how many tokens the conversation has used so far.
 
 **Requirements**
 
@@ -50,7 +50,7 @@ You: quit
 
 **Bonus · switch to a smaller model when the chat gets long**
 
-Write `lab/q1_bonus_switch_model.py`: start with `"ollama:llama3.2:1b"`. When the cumulative
+Copy your Q1 answer to `lab/q1_bonus_switch_model.py`. Start with `"ollama:llama3.2:1b"`. When the cumulative
 total passes a threshold (say 300 tokens), switch to the smaller `"ollama:qwen2.5:0.5b"` for the
 rest of the chat. Tell the user when the switch happens, and show which model answered on every
 token line. Keep the conversation history: the new model gets the same `messages` list.
