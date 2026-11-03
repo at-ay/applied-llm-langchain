@@ -2,6 +2,7 @@
 
 The LangChain module of the Applied LLM Course:
 
+- **`slides/`:** the lecture slides, [langchain-slides.pdf](slides/langchain-slides.pdf).
 - **`examples/`:** the code from the LangChain slides, as small programs you can run. There is
   one file per slide (or group of slides), numbered in the order of the deck.
 - **`lab/`:** the lab sheet and its starter files. See [lab/README.md](lab/README.md).
@@ -37,6 +38,8 @@ applied-llm-langchain/
 ├── data/
 │   ├── card_fees_policy.pdf   for the RAG examples
 │   └── complaints.md          for lab Q2
+├── slides/
+│   └── langchain-slides.pdf   the lecture slides
 ├── examples/
 │   └── 01_first_call.py ... 15_rag_chain.py
 └── lab/
