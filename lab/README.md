@@ -9,6 +9,10 @@ uv run python lab/q1_token_chatbot.py
 
 Use `"ollama:llama3.2:1b"` as the model unless a question says otherwise.
 
+**Handing in:** download [lab-sheet.docx](lab-sheet.docx) (the same questions, with a box for every
+answer). Fill in each box with your code, the pasted terminal output, a screenshot and your answers,
+then hand in the Word file.
+
 ---
 
 ## Q1 · A chatbot that counts its tokens

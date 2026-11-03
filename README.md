@@ -41,6 +41,7 @@ applied-llm-langchain/
 │   └── 01_first_call.py ... 15_rag_chain.py
 └── lab/
     ├── README.md              the lab sheet
+    ├── lab-sheet.docx         the lab sheet with answer boxes, to hand in
     └── q2a_prompting.py ...   starter files
 ```
 
@@ -293,6 +294,9 @@ uv run python lab/q2a_prompting.py
 ```
 
 A starter file prints `Fill in the YOUR TURN lines first.` until you have written your part.
+
+Hand in your answers in [lab/lab-sheet.docx](lab/lab-sheet.docx): the same questions, with a box
+for every answer.
 
 ## Seeing what an agent did
 
