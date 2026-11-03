@@ -175,31 +175,3 @@ invalid           0           0           0           0
 
 Think about: which complaints change urgency when you change the prompt? Compare your best prompt
 with (iii): how much of (iii)'s improvement came from the schema, and how much from the prompt?
-
-**Bonus for (iii) · a reason field before urgency**
-
-Copy `lab/q2c_detailed_schema.py` to `lab/q2c_bonus_reason.py` and add one field to the class,
-**between** `product` and `urgency`:
-
-```python
-reason: str = Field(description="One short sentence: what is at risk for the customer, and how soon")
-```
-
-Print the reason under each complaint and compare the counts with (iii). Example output:
-
-```
-5 | Someone I don't know used my card to buy a TV online this mo
-   reason: unauthorized transaction
-4 | My salary was paid in three days ago but it still doesn't sh
-   reason: payment
-...
-urgency 1: 2
-urgency 2: 5
-urgency 3: 4
-urgency 4: 1
-urgency 5: 6
-urgency invalid: 0
-```
-
-Think about: the model writes the JSON fields in the order of the class. Why can a field that
-comes **before** `urgency` change the urgency? What happens if you put `reason` **after** `urgency`?
